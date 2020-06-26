@@ -6,6 +6,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html, body, main {
   height: 100%;
 }
+
+html { background-color: yellow; }
+body { background-color: blue; }
+main { background-color: red; }
