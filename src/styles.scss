@@ -5,16 +5,19 @@
 
 // Settings
 @import './assets/scss/settings/breakpoints';
-@import './assets/scss/settings/mixins'
+@import './assets/scss/settings/mixins';
 
 // Tools
 
 // Generic
+@import './assets/scss/generic/global';
 
 // Elements
 
 // Objects
 
 // Components
+@import './assets/scss/components/header';
+@import './assets/scss/components/footer';
 
 // Utilities
