@@ -6,13 +6,15 @@ import { SpecialistsComponent } from './components/specialists/specialists.compo
 import { SpecialistComponent } from './components/specialist/specialist.component';
 import { SpecialistDetailComponent } from './components/specialist-detail/specialist-detail.component';
 import { SpecialistInfoComponent } from './components/specialist-info/specialist-info.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [SpecialistsComponent, SpecialistComponent, SpecialistDetailComponent, SpecialistInfoComponent],
   imports: [
     CommonModule,
-    SpecialistsRoutingModule
+    SpecialistsRoutingModule,
+    SharedModule
   ]
 })
 export class SpecialistsModule { }

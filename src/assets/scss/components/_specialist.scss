@@ -2,17 +2,20 @@
   background-color: white;
   border-radius: ($base-size * 2);
   box-shadow: 0 5px 15px hsl(255, 87%, 91.6%);
-  display: grid;
   padding: $padding1;
+  display: flex;
+  flex-direction: column;
   @include respond-to('xsmall') {
     border-radius: ($base-size * 3);
     display: grid;
-    padding: $padding2;
+    flex-direction: initial;
+    gap: $base-size * 4;
     grid-template-areas: 
       'AreaInfo AreaDetail'
       'AreaInfo AreaDetail'
       'AreaInfo AreaFooter'
     ;
+    padding: $padding2;
   }
   @include respond-to('small') {
     border-radius: ($base-size * 3);
@@ -20,7 +23,6 @@
   }
 
   app-specialist-info {
-    background-color: yellow;
     grid-area: AreaInfo;
   }
   app-specialist-detail {
@@ -28,6 +30,7 @@
     grid-area: AreaDetail;
   }
   .specialist__footer {
+    align-items: center;
     background-color: red;
     display: flex;
     grid-area: AreaFooter;

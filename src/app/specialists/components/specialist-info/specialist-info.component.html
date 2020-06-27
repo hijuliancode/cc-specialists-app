@@ -1,3 +1,9 @@
-<div class="specialist__info">
-  <img src="" alt="Specialist image">
+<div class="specialist-info">
+  <img class="specialist-info__image" [src]="specialist.image" [alt]="specialist.prefix + ' ' + specialist.name">
+  <h3 class="specialist-info__name">{{specialist.prefix + ' ' + specialist.name}}</h3>
+  <h4 class="specialist-info__career">{{specialist.career}}</h4>
+  <star-rating value="5" totalstars="5" checkedcolor="red" uncheckedcolor="black" size="24px" readonly="false" (rate)="onRate($event)"></star-rating>
+  <p class="specialist-info__location">
+    {{specialist.location}}
+  </p>
 </div>
