@@ -1,0 +1,7 @@
+// Star Rating styles
+
+body { // Body to add specificity
+  .rating.color-positive .star-container .star svg {
+    fill: $colorPrimary !important; // Sorry the start-rating has !important
+  }
+}

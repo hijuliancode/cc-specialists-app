@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RatingModule } from 'ng-starrating';
+import { StarRatingModule } from 'angular-star-rating';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -14,12 +14,12 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     CommonModule,
-    RatingModule
+    StarRatingModule.forRoot()
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    RatingModule
+    StarRatingModule
   ]
 })
 export class SharedModule { }

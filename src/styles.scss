@@ -1,14 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~normalize.css';
+@import '~css-star-rating/scss/star-rating';
 
 /** ** ITCSS ** **/ // https://www.arsys.es/blog/programacion/itcss-mejores-practicas-css/
 
 // Settings
 @import './assets/scss/settings/variables';
 @import './assets/scss/settings/breakpoints';
-@import './assets/scss/settings/mixins';
 
 // Tools
+@import './assets/scss/tools/mixins';
 
 // Generic
 @import './assets/scss/generic/global';
@@ -26,5 +27,7 @@
 @import './assets/scss/components/footer';
 @import './assets/scss/components/main';
 @import './assets/scss/components/specialist';
+@import './assets/scss/components/chips';
 
 // Utilities
+@import './assets/scss/utilities/star-rating';
