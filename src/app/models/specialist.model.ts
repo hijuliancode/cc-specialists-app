@@ -6,4 +6,9 @@ export interface Specialist {
   career: string;
   rate: number;
   location: string;
+  availability: Date;
+  detail: {
+    description: string;
+    specialities: string[]
+  }
 }

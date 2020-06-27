@@ -1,9 +1,6 @@
-import { Component, OnInit } from '@angular/core'
-
+import { Component, OnInit, Input } from '@angular/core'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-
-import { Specialist } from 'src/app/models/specialist.model'
-import shortid from "shortid"
+import { Specialist } from 'src/app/models/specialist.model';
 
 @Component({
   selector: 'app-specialist-info',
@@ -12,19 +9,12 @@ import shortid from "shortid"
 })
 export class SpecialistInfoComponent implements OnInit {
 
+  @Input() specialist : Specialist;
+
   faMapMarkerAlt = faMapMarkerAlt;
 
-  specialist:Specialist = {
-    id: shortid.generate(),
-    image: 'https://i.pravatar.cc?img=5',
-    prefix: 'Dra.',
-    name: 'María José Dominguez',
-    career: 'Especialista en Pediatría',
-    rate: 4,
-    location: 'Cl. 123 #7-60 Edificio Medical Center',
-  }
-
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
   }

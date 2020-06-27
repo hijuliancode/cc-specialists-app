@@ -1,10 +1,10 @@
-<div class="specialist-grid">
-  <app-specialist-info></app-specialist-info>
-  <app-specialist-detail></app-specialist-detail>
+<div class="specialist-grid" *ngFor="let specialist of specialists">
+  <app-specialist-info [specialist]="specialist"></app-specialist-info>
+  <app-specialist-detail [specialist]="specialist"></app-specialist-detail>
   <div class="specialist__footer">
     <span>
       <fa-icon [icon]="faClock"></fa-icon>
-      Hoy: {{today | date}}
+      Hoy: {{specialist.availability | date}}
     </span>
     <button class="button button-primary">Pedir Cita</button>
   </div>
