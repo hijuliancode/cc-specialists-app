@@ -1,0 +1,36 @@
+.specialist-grid {
+  background-color: white;
+  border-radius: ($base-size * 2);
+  box-shadow: 0 5px 15px hsl(255, 87%, 91.6%);
+  display: grid;
+  padding: $padding1;
+  @include respond-to('xsmall') {
+    border-radius: ($base-size * 3);
+    display: grid;
+    padding: $padding2;
+    grid-template-areas: 
+      'AreaInfo AreaDetail'
+      'AreaInfo AreaDetail'
+      'AreaInfo AreaFooter'
+    ;
+  }
+  @include respond-to('small') {
+    border-radius: ($base-size * 3);
+    padding: $padding3;
+  }
+
+  app-specialist-info {
+    background-color: yellow;
+    grid-area: AreaInfo;
+  }
+  app-specialist-detail {
+    background-color: blue;
+    grid-area: AreaDetail;
+  }
+  .specialist__footer {
+    background-color: red;
+    display: flex;
+    grid-area: AreaFooter;
+    justify-content: space-between;
+  }
+}
