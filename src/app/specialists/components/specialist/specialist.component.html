@@ -2,7 +2,10 @@
   <app-specialist-info></app-specialist-info>
   <app-specialist-detail></app-specialist-detail>
   <div class="specialist__footer">
-    <span>Hoy: Mar, 11 de sep</span>
-    <button>Hola</button>
+    <span>
+      <fa-icon [icon]="faClock"></fa-icon>
+      Hoy: {{today | date}}
+    </span>
+    <button class="button button-primary">Pedir Cita</button>
   </div>
 </div>

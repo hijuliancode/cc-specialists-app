@@ -4,6 +4,7 @@
   <h4 class="specialist-info__career">{{specialist.career}}</h4>
   <star-rating class="specialist-info__rate" [starType]="'svg'" [rating]="specialist.rate"></star-rating>
   <p class="specialist-info__location">
+    <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
     {{specialist.location}}
   </p>
 </div>

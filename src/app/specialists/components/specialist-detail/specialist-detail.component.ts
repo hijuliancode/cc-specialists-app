@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./specialist-detail.component.scss']
 })
 export class SpecialistDetailComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
